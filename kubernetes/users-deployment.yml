@@ -17,6 +17,5 @@ spec:
           image: wnsvy607/kub-demo-users:latest
           env:
             - name: AUTH_ADDRESS
-              value: localhost
-        - name: auth
-          image: wnsvy607/kub-demo-auth:latest
+              # 수동으로 가져온 호스트 주소
+              value: "10.102.66.87"
