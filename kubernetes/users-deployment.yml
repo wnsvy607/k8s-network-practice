@@ -18,4 +18,5 @@ spec:
           env:
             - name: AUTH_ADDRESS
               # 수동으로 가져온 호스트 주소
-              value: "10.102.66.87"
+              # value: "10.102.66.87"
+              value: "auth-service.default"
