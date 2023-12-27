@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: users-service
+spec:
+  selector:
+    app: users
+    # 디폴트로 설정되는 ClusterIP도 내부에서 로드 밸런싱이 가능하다(외부로의 노출은 당연히 안된다.)
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
